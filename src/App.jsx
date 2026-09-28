@@ -521,7 +521,7 @@ function LegacyHomePage() {
   const otherFeatureText = otherEnabled ? `%0D%0A- ${t.otherCustom}（+ NT$ 6,000 起）` : "";
   const mailSubject = encodeURIComponent(t.mailSubject);
   const mailBody = `${t.mailHello}%0D%0A%0D%0A${t.mailSelected}%0D%0A${selectedFeatureText || "- 尚未勾選功能"}${otherFeatureText}%0D%0A%0D%0A${t.mailSubtotal}${subtotal === 0 ? "尚未估算" : `NT$ ${subtotal.toLocaleString()}`}%0D%0A${t.mailEstimate}${estimateLabel}%0D%0A${t.mailMonthly}${monthlyCostLabel}%0D%0A%0D%0A${t.mailBrief}%0D%0A${t.mailPlaceholder}`;
-  const estimateMailto = `mailto:easonlsy1019@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+  const estimateMailto = `mailto:archived-contact@example.invalid?subject=${mailSubject}&body=${mailBody}`;
 
   const buildSmallPlanMailto = (plan) => {
     const subject = encodeURIComponent(`${t.smallPlanMailSubject}${plan.name}`);
@@ -542,7 +542,7 @@ function LegacyHomePage() {
 ` +
       `${t.mailPlaceholder}`
     );
-    return `mailto:easonlsy1019@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
   };
 
   const buildMidPlanMailto = (plan) => {
@@ -562,7 +562,7 @@ function LegacyHomePage() {
 ` +
       `${t.mailPlaceholder}`
     );
-    return `mailto:easonlsy1019@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
   };
 
   const buildCrmPlanMailto = (plan) => {
@@ -584,7 +584,7 @@ function LegacyHomePage() {
 ` +
       `${isEnglish ? "(Please describe what you want to track, who will use it, and whether it needs cloud sync or login.)" : "（請簡單說明想追蹤什麼、誰會使用、是否需要雲端同步或登入）"}`
     );
-    return `mailto:easonlsy1019@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
   };
 
   const buildMaintenancePlanMailto = (plan) => {
@@ -604,7 +604,7 @@ function LegacyHomePage() {
 ` +
       `${isEnglish ? "(Please describe what has been launched and what needs to be updated or maintained.)" : "（請簡單說明目前已上線的內容，以及想修改、維護或定期處理的項目）"}`
     );
-    return `mailto:easonlsy1019@gmail.com?subject=${subject}&body=${body}`;
+    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
   };
 
   const toggleOption = (id) => {
@@ -942,7 +942,7 @@ function LegacyHomePage() {
           </div>
         </section>
 
-        <section id="contact" className="mx-auto max-w-7xl px-6 pb-24"><div className="rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-8 md:p-10"><div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center"><div><p className="text-sm font-semibold text-cyan-200">{t.contactLabel}</p><h2 style={{ textWrap: "balance" }} className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-[2.35rem]">{t.contactTitle}</h2><p className="mt-5 leading-7 text-slate-300">{t.contactText}</p></div><div className="rounded-3xl bg-slate-950/60 p-6 ring-1 ring-white/10"><p className="text-sm text-slate-400">{t.contactSmall}</p><p className="mt-4 text-sm leading-7 text-slate-300">{t.contactPrompt}</p><a href={estimateMailto}><Button className="mt-6 w-full">{t.contactButton} <ExternalLink className="ml-2 h-4 w-4" /></Button></a><div className="mt-5 rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-4 text-sm leading-7 text-cyan-50"><p className="font-semibold text-white">{isEnglish ? "LINE contact" : "LINE 聯絡"}</p><p className="mt-1">LINE ID：1234567890eason60708</p><p className="text-xs text-cyan-100/80">{isEnglish ? "You can also email me through the button above." : "也可以直接用上方按鈕寄信說明目前流程。"}</p></div></div></div></div></section>
+        <section id="contact" className="mx-auto max-w-7xl px-6 pb-24"><div className="rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-8 md:p-10"><div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center"><div><p className="text-sm font-semibold text-cyan-200">{t.contactLabel}</p><h2 style={{ textWrap: "balance" }} className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-[2.35rem]">{t.contactTitle}</h2><p className="mt-5 leading-7 text-slate-300">{t.contactText}</p></div><div className="rounded-3xl bg-slate-950/60 p-6 ring-1 ring-white/10"><p className="text-sm text-slate-400">{t.contactSmall}</p><p className="mt-4 text-sm leading-7 text-slate-300">{t.contactPrompt}</p><a href={estimateMailto}><Button className="mt-6 w-full">{t.contactButton} <ExternalLink className="ml-2 h-4 w-4" /></Button></a><div className="mt-5 rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-4 text-sm leading-7 text-cyan-50"><p className="font-semibold text-white">{isEnglish ? "LINE contact" : "LINE 聯絡"}</p><p className="mt-1">LINE：Archived contact details removed</p><p className="text-xs text-cyan-100/80">{isEnglish ? "You can also email me through the button above." : "也可以直接用上方按鈕寄信說明目前流程。"}</p></div></div></div></div></section>
       </main>
     </div>
   );
