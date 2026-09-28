@@ -521,7 +521,7 @@ function LegacyHomePage() {
   const otherFeatureText = otherEnabled ? `%0D%0A- ${t.otherCustom}（+ NT$ 6,000 起）` : "";
   const mailSubject = encodeURIComponent(t.mailSubject);
   const mailBody = `${t.mailHello}%0D%0A%0D%0A${t.mailSelected}%0D%0A${selectedFeatureText || "- 尚未勾選功能"}${otherFeatureText}%0D%0A%0D%0A${t.mailSubtotal}${subtotal === 0 ? "尚未估算" : `NT$ ${subtotal.toLocaleString()}`}%0D%0A${t.mailEstimate}${estimateLabel}%0D%0A${t.mailMonthly}${monthlyCostLabel}%0D%0A%0D%0A${t.mailBrief}%0D%0A${t.mailPlaceholder}`;
-  const estimateMailto = `mailto:archived-contact@example.invalid?subject=${mailSubject}&body=${mailBody}`;
+  const estimateMailto = `mailto:?subject=${mailSubject}&body=${mailBody}`;
 
   const buildSmallPlanMailto = (plan) => {
     const subject = encodeURIComponent(`${t.smallPlanMailSubject}${plan.name}`);
@@ -542,7 +542,7 @@ function LegacyHomePage() {
 ` +
       `${t.mailPlaceholder}`
     );
-    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
+    return `mailto:?subject=${subject}&body=${body}`;
   };
 
   const buildMidPlanMailto = (plan) => {
@@ -562,7 +562,7 @@ function LegacyHomePage() {
 ` +
       `${t.mailPlaceholder}`
     );
-    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
+    return `mailto:?subject=${subject}&body=${body}`;
   };
 
   const buildCrmPlanMailto = (plan) => {
@@ -584,7 +584,7 @@ function LegacyHomePage() {
 ` +
       `${isEnglish ? "(Please describe what you want to track, who will use it, and whether it needs cloud sync or login.)" : "（請簡單說明想追蹤什麼、誰會使用、是否需要雲端同步或登入）"}`
     );
-    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
+    return `mailto:?subject=${subject}&body=${body}`;
   };
 
   const buildMaintenancePlanMailto = (plan) => {
@@ -604,7 +604,7 @@ function LegacyHomePage() {
 ` +
       `${isEnglish ? "(Please describe what has been launched and what needs to be updated or maintained.)" : "（請簡單說明目前已上線的內容，以及想修改、維護或定期處理的項目）"}`
     );
-    return `mailto:archived-contact@example.invalid?subject=${subject}&body=${body}`;
+    return `mailto:?subject=${subject}&body=${body}`;
   };
 
   const toggleOption = (id) => {
