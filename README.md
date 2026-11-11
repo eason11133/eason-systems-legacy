@@ -9,7 +9,7 @@
 這段探索最後**沒有形成商業成交**。後續 Eason Systems 已從 broad custom development 轉向自主產品開發；目前的 Eason Systems、LTA 與 EOT 請以 current repo 與正式網站為準。
 
 **Current Eason Systems:** https://github.com/eason11133/eason-systems  
-**Current website:** https://eason-systems.vercel.app/
+**Current website:** https://eason-systems-studio.vercel.app/
 
 > 這個 repository 保留早期「軟體接案與市場驗證」階段，作為開發過程、商業驗證與方向轉型的歷史證據。
 
@@ -81,7 +81,7 @@ Current Eason Systems 不再以這份 legacy 網站中的接案服務選單作�
 請見：
 
 - Current repo: https://github.com/eason11133/eason-systems
-- Current website: https://eason-systems.vercel.app/
+- Current website: https://eason-systems-studio.vercel.app/
 
 ## 技術
 
