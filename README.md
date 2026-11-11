@@ -130,4 +130,4 @@ npm run build
 
 這個 repository 的目的是保留 **2026.05–07 的探索紀錄**，不是重新啟用當時的接案服務。
 
-為了讓 archive 可以安全公開，source 中不保留實際外部開發名單、CRM 私人資料或真實聯絡方式；早期網站中的個人 Email / LINE 聯絡資訊已改為 archive placeholder。
+Public repository 不保存實際外部開發名單或 CRM 私人資料。網站聯絡按鈕使用 easonlsy1019@gmail.com；LINE 官方帳號連結尚未驗證，因此暫時隱藏 LINE 聯絡入口。
